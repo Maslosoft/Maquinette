@@ -1,0 +1,16 @@
+{
+    "name": "maslosoft/maquinette",
+    "description": "Coffeescript signals based build merger",
+    "require": {
+        "maslosoft/signals": "*"
+    },
+    "require-dev": {
+        "maslosoft/hedron": "*"
+    },
+    "authors": [
+        {
+            "name": "Peter Maselkowski",
+            "email": "pmaselkowski@gmail.com"
+        }
+    ]
+}
