@@ -7,14 +7,15 @@
 	],
 	"require": {
 		"maslosoft/signals": "*",
-		"symfony/console": "*"
+		"symfony/console": "*",
+		"maslosoft/sitcom": "*"
 	},
 	"require-dev": {
 		"maslosoft/hedron": "*"
 	},
 	"autoload": {
 		"psr-4": {
-			"Maslosoft\\Maquinette": "src"
+			"Maslosoft\\Maquinette\\": "src"
 		}
 	},
 	"bin": [

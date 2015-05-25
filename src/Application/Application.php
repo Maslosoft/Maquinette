@@ -8,7 +8,10 @@
 
 namespace Maslosoft\Maquinette\Application;
 
+use Maslosoft\Maquinette\Application\Commands\CollectCommand;
+use Maslosoft\Maquinette\Application\Commands\PreviewCommand;
 use Symfony\Component\Console\Application as ConsoleApplication;
+use Symfony\Component\Finder\Shell\Command;
 
 /**
  * MaquinetteApplication
@@ -23,7 +26,7 @@ class Application extends ConsoleApplication
 	 * font: slant
 	 */
 	const Logo = <<<LOGO
-     __  ___                  _            __  __
+    __  ___                  _            __  __
    /  |/  /___ _____ ___  __(_)___  ___  / /_/ /____
   / /|_/ / __ `/ __ `/ / / / / __ \/ _ \/ __/ __/ _ \
  / /  / / /_/ / /_/ / /_/ / / / / /  __/ /_/ /_/  __/
@@ -51,7 +54,8 @@ LOGO;
 	{
 		$commands = parent::getDefaultCommands();
 
-		$commands[] = new SingleCommand();
+		$commands[] = new PreviewCommand();
+		$commands[] = new CollectCommand();
 
 		return $commands;
 	}

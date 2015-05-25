@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "11415049f1bab9700c80648a9827902a",
+    "hash": "b81b4b08d9a57bd718abef2fe5061ddc",
     "packages": [
         {
             "name": "maslosoft/addendum",
@@ -200,6 +200,47 @@
                 "slots"
             ],
             "time": "2015-05-04 16:26:33"
+        },
+        {
+            "name": "maslosoft/sitcom",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Maslosoft/Sitcom.git",
+                "reference": "0b11663a2b47a592f7a476d9372f0544f64235e2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Maslosoft/Sitcom/zipball/0b11663a2b47a592f7a476d9372f0544f64235e2",
+                "reference": "0b11663a2b47a592f7a476d9372f0544f64235e2",
+                "shasum": ""
+            },
+            "require": {
+                "maslosoft/signals": "~1.0",
+                "symfony/console": "~2.6"
+            },
+            "require-dev": {
+                "maslosoft/hedron": "~1.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Maslosoft\\Sitcom\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "AGPL",
+                "Commercial"
+            ],
+            "authors": [
+                {
+                    "name": "Peter Maselkowski",
+                    "email": "pmaselkowski@gmail.com"
+                }
+            ],
+            "description": "Signals based console application wrapper",
+            "time": "2015-03-19 11:36:03"
         },
         {
             "name": "psr/log",
