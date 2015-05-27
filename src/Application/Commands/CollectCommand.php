@@ -42,12 +42,12 @@ EOT;
 	}
 
 	/**
-	 * @SlotFor(Maslosoft\Sitcom\Command)
-	 * @param Maslosoft\Signals\Command $signal
+	 * @SlotFor(Command)
+	 * @param Command $signal
 	 */
 	public function reactOn(Command $signal)
 	{
-		$signal->add($this, 'hedron');
+		$signal->add($this, 'maquinette');
 	}
 
 }
