@@ -1,0 +1,4 @@
+# Maquinette
+Signals based coffee build merger
+
+## On Hold - future of this project is uncertain
